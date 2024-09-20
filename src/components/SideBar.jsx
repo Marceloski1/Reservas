@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/style.css'
+import '../styles/Sidebar.css'
 
 const Sidebar = ({ setView }) => {
     return (

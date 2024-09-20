@@ -1,0 +1,48 @@
+ul {
+    max-width: 400px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10%; 
+    padding: 2% 50% 0 0;
+}
+
+li div {
+    margin-bottom: 5px;
+}
+
+.reservList {
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 250px;
+    padding: 0 auto;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.numberInput{
+    width: 20%;
+    margin:  0 auto ;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 15px;
+
+}
+
+.nrm {
+    text-align: center;
+    font-size: 30px;
+    padding: 3% 10% 0 0%;
+}

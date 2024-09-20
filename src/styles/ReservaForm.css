@@ -1,0 +1,77 @@
+.reserva-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2px 9% 0 0;
+    border-radius: 8px;
+
+}
+
+.form-for-content{    
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.form-content {   
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+input {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.form-content input[name="nombre"], .form-content input[name="apellido"] {
+    width: 100%; 
+    padding: 12px; 
+    font-size: 16px; 
+}
+
+
+.form-content input[type="date"] {
+    width: 80%; 
+    padding: 8px; 
+    font-size: 14px;
+    margin: 0 auto; 
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    display: block;
+    width: 50%;
+    margin: 0 auto ;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button[type="submit"]:active {
+    background-color: #11e91c;
+} 
+
+label{
+  text-align: center;
+}
+
+.other{
+    margin-bottom: 5%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 0 4%;
+}
+
+input[type="date"] {
+    padding: 8px; 
+}

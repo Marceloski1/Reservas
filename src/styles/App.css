@@ -1,0 +1,29 @@
+.app-layout {
+    display: flex;
+    width: 100%;
+}
+
+.content {
+    margin-left: 270px; /* Espacio para la sidebar */
+    padding: 20px;
+    flex: 1;
+}
+
+.unic {
+    color: rgb(32, 36, 33);
+    margin: 0 0 3% 0;
+    padding: 0 8% 0 0;
+    text-align: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(to right, #2d5c87, #feb47b);
+}
+
+h1 {
+    text-align: center;
+}

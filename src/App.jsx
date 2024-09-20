@@ -3,13 +3,12 @@ import Sidebar from './components/Sidebar';
 import ReservaForm from './components/ReservaForm';
 import ReservaList from './components/ReservaList';
 import CancelReserva from './components/CancelReserva';
-import './assets/style.css';  // Import the CSS file
-
+import "./styles/App.css"
 function App() {
     const [view, setView] = useState('nueva');
     const [reservas, setReservas] = useState([]);
 
-    // Retrieve reservations from localStorage when the app starts
+    
     useEffect(() => {
         const storedReservas = JSON.parse(localStorage.getItem('reservas'));
         if (storedReservas) {
@@ -17,7 +16,7 @@ function App() {
         }
     }, []);
 
-    // Save reservations to localStorage whenever the reservas state changes
+    
     useEffect(() => {
         localStorage.setItem('reservas', JSON.stringify(reservas));
     }, [reservas]);
@@ -26,9 +25,10 @@ function App() {
         setReservas([...reservas, reserva]);
     };
 
-    const cancelReserva = (numeroHabitacion) => {
-        setReservas(reservas.filter(reserva => reserva.numeroHabitacion !== parseInt(numeroHabitacion)));
+    const cancelReserva = (id) => {
+        setReservas(reservas.filter(reserva => reserva.id !== parseInt(id)));
     };
+    
 
     return (
         <div className="app-layout">
